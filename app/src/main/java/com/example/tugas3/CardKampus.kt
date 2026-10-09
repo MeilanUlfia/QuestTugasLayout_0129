@@ -44,5 +44,18 @@ fun CardKampus(
             contentDescription = stringResource(R.string.logo_desc),
             modifier = Modifier.size(dimensionResource(R.dimen.logo_size))
         )
+        Column(
+            modifier = Modifier
+                .weight(1f)
+                .padding(horizontal = dimensionResource(R.dimen.text_spacing))
+        ) {
+            Text(
+                text = nama,
+                color = colorResource(R.color.text_putih),
+                fontSize = spResource(R.dimen.text_name),
+                fontWeight = FontWeight.Bold,
+                fontFamily = fontNama
+            )
+        }
     }
 }
