@@ -11,4 +11,8 @@
     <color name="card_ungu">#FF7B3FC4</color>
     <color name="card_biru">#FF0000FF</color>
     <color name="card_hijau">#FF006400</color>
+
+    <color name="text_putih">#FFFFFFFF</color>
+    <color name="text_kuning">#FFFFEB3B</color>
+    <color name="text_cyan">#FF00E5FF</color>
 </resources>
