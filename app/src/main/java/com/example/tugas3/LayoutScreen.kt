@@ -41,6 +41,12 @@ fun LayoutScreen(modifier: Modifier = Modifier) {
                 fontSize = spResource(R.dimen.text_subtitle),
                 fontWeight = FontWeight.Bold
             )
+            Spacer(modifier = Modifier.weight(1f))
+            Text(
+                text = stringResource(R.string.copyright),
+                fontSize = spResource(R.dimen.text_footer),
+                modifier = Modifier.padding(bottom = dimensionResource(R.dimen.footer_padding_bottom))
+            )
         }
     }
 }
