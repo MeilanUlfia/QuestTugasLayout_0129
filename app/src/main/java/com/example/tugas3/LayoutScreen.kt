@@ -41,12 +41,31 @@ fun LayoutScreen(modifier: Modifier = Modifier) {
                 fontSize = spResource(R.dimen.text_subtitle),
                 fontWeight = FontWeight.Bold
             )
-            Spacer(modifier = Modifier.weight(1f))
-            Text(
-                text = stringResource(R.string.copyright),
-                fontSize = spResource(R.dimen.text_footer),
-                modifier = Modifier.padding(bottom = dimensionResource(R.dimen.footer_padding_bottom))
+        }
+
+        val fontScript = FontFamily(Font(R.font.dancing_script))
+        Column(verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.card_spacing))) {
+            CardKampus(
+                nama = stringResource(R.string.nama_1),
+                lokasi = stringResource(R.string.lokasi_1),
+                warnaCard = colorResource(R.color.card_abu),
+                warnaLokasi = colorResource(R.color.text_kuning),
+                fontNama = fontScript
+            )
+            CardKampus(
+                nama = stringResource(R.string.nama_2),
+                lokasi = stringResource(R.string.lokasi_2),
+                warnaCard = colorResource(R.color.card_ungu),
+                warnaLokasi = colorResource(R.color.text_kuning)
             )
         }
+
+        Spacer(modifier = Modifier.weight(1f))
+
+        Text(
+            text = stringResource(R.string.copyright),
+            fontSize = spResource(R.dimen.text_footer),
+            modifier = Modifier.padding(bottom = dimensionResource(R.dimen.footer_padding_bottom))
+        )
     }
 }
