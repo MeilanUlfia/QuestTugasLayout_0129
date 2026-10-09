@@ -56,6 +56,12 @@ fun CardKampus(
                 fontWeight = FontWeight.Bold,
                 fontFamily = fontNama
             )
+            Text(
+                text = lokasi,
+                color = warnaLokasi,
+                fontSize = spResource(R.dimen.text_detail)
+            )
         }
+
     }
 }
