@@ -62,6 +62,11 @@ fun CardKampus(
                 fontSize = spResource(R.dimen.text_detail)
             )
         }
+        Image(
+            painter = painterResource(R.drawable.logo_umy),
+            contentDescription = stringResource(R.string.logo_desc),
+            modifier = Modifier.size(dimensionResource(R.dimen.logo_size))
+        )
 
     }
 }
