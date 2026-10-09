@@ -28,7 +28,6 @@ fun CardKampus(
     warnaCard: Color,
     warnaLokasi: Color,
     modifier: Modifier = Modifier,
-    telepon: String? = null,
     fontNama: FontFamily? = null
 ) {
     Row(
