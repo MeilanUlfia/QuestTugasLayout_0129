@@ -58,6 +58,18 @@ fun LayoutScreen(modifier: Modifier = Modifier) {
                 warnaCard = colorResource(R.color.card_ungu),
                 warnaLokasi = colorResource(R.color.text_kuning)
             )
+            CardKampus(
+                nama = stringResource(R.string.nama_3),
+                lokasi = stringResource(R.string.lokasi_3),
+                warnaCard = colorResource(R.color.card_biru),
+                warnaLokasi = colorResource(R.color.text_putih)
+            )
+            CardKampus(
+                nama = stringResource(R.string.nama_4),
+                lokasi = stringResource(R.string.lokasi_4),
+                warnaCard = colorResource(R.color.card_hijau),
+                warnaLokasi = colorResource(R.color.text_putih)
+            )
         }
 
         Spacer(modifier = Modifier.weight(1f))
