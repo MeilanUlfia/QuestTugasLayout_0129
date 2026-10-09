@@ -39,6 +39,10 @@ fun CardKampus(
             .padding(dimensionResource(R.dimen.card_padding)),
         verticalAlignment = Alignment.CenterVertically
     ) {
-        // isi ditambah di commit berikutnya
+        Image(
+            painter = painterResource(R.drawable.logo_umy),
+            contentDescription = stringResource(R.string.logo_desc),
+            modifier = Modifier.size(dimensionResource(R.dimen.logo_size))
+        )
     }
 }
